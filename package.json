@@ -10,8 +10,25 @@
     "test": "jest"
   },
   "dependencies": {
+    "@premieroctet/react-native-video-controls": "^1.0.2",
+    "@react-native-community/masked-view": "^0.1.11",
+    "@react-navigation/native": "^6.1.6",
+    "@react-navigation/native-stack": "^6.9.13",
+    "prop-types": "^15.8.1",
     "react": "18.2.0",
-    "react-native": "0.71.8"
+    "react-hook-form": "^7.51.3",
+    "react-native": "0.71.8",
+    "react-native-dropdown-picker": "^5.4.6",
+    "react-native-gesture-handler": "^2.16.1",
+    "react-native-paper": "^5.11.2",
+    "react-native-paper-dropdown": "^1.0.7",
+    "react-native-popover-view": "^5.1.8",
+    "react-native-reanimated": "^3.10.0",
+    "react-native-safe-area-context": "^4.6.2",
+    "react-native-screens": "^3.20.0",
+    "react-native-svg": "^14.1.0",
+    "react-native-utils-navigation-bar": "^2.0.4",
+    "rn-credit-card": "^1.0.4"
   },
   "devDependencies": {
     "@babel/core": "^7.20.0",
