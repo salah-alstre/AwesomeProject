@@ -27,18 +27,16 @@ if (body){
     .catch ( e => console.log ('fetch error' , e ));
 
 };
+export const Register = async (body) => {
+    // const route = '/Login' ; 
+    const route = '/Register';
+    console.log("body : ", body);
+    return await appFetch(route, 'POST', body)
+};
 
-// export const fetchApi = async (route, method, body) => {
-//     const url = domain + route;
-//     return await fetch(url, {
-//         method: method || 'GET',
-//         headers: {
-//             'Content-Type': 'application/json', 
-//         },
-//         body: body,
+export  const Details = async (body)=> {
+    console.log(body)
+    const route = '/Details';
+    return await appFetch(route , 'POST', body); 
 
-//     }).then(res => res.json())
-//     .catch((error) => {
-//         console.error("fetch Error", error.message);
-//     });
-// }
+};

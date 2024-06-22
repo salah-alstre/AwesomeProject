@@ -47,7 +47,6 @@ const ProfileCards = (props) => {
   
   
   const renderItem = ({item}) => {
-    // <TouchableOpacity onPress={() => props.navigation.navigate('Home')}>
     return(
 
     <TouchableOpacity style={styles.itemContainer} 
@@ -66,6 +65,7 @@ const ProfileCards = (props) => {
   }
 
   return (
+    
     <View style = {styles.yarn}>
 
     <TouchableOpacity style={styles.npm} 
@@ -74,13 +74,13 @@ const ProfileCards = (props) => {
           <Image source={{ uri: "https://img.lovepik.com/free-png/20210918/lovepik-character-png-image_400195163_wh1200.png"}} style={styles.avatar} />
       
     </TouchableOpacity>
-
-    
+ 
     <FlatList
       data={items}
       renderItem={renderItem}
       keyExtractor={item => item.name}
     />
+     
     </View>
   );
 };
@@ -133,17 +133,23 @@ const styles = StyleSheet.create({
   },
   yarn: {
     flex:1,
-    padding:10
+    padding:10,
   },
   npm:{
     width: 60,
     height: 60,
     borderRadius: 30,
-    // borderWidth: 3,
     borderColor: 'black',
     marginBottom:20,
     borderRadius: 30,
 
+  },
+  support:{
+    borderRadius: 30,
+    borderColor: 'red',
+    marginBottom:10,
+    borderRadius: 30,
+    alignItems: 'center',
   }
 });
 

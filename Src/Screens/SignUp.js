@@ -1,15 +1,39 @@
-import React, { useState } from 'react'
-import { StyleSheet, Text, View, TextInput, TouchableOpacity, Image, Alert } from 'react-native'
+import React, { useState } from 'react';
+import { StyleSheet, Text, View, TextInput, TouchableOpacity, Image, Alert } from 'react-native';
+import { Register } from '../res/api/api';
 
 export default SignUpView = (props) => {
 
-  const [fullName, setFullName] = useState()
-  const [email, setEmail] = useState()
-  const [password, setPassword] = useState()
+  const [fullName, setFullName] = useState('');
+  const [Email, setEmail] = useState('');
+  const [password, setPassword] = useState('');
 
-  showAlert = viewId => {
-    // Alert.alert('Alert', 'Button pressed ' + viewId)
-  }
+  const signUpServer = () => {
+    const userInfo = {
+      fullName,
+      Email,
+      pass: password,
+    };
+
+    Register(userInfo)
+      .then((value) => {
+        console.log("Register res", value);
+        if (!value?.error) {
+          props.navigation.navigate('Confirm');
+        } else {
+          console.log("not correct");
+          Alert.alert("Error", "Register up failed");
+        }
+      })
+      .catch((error) => {
+        console.error("Error:", error);
+        let errorMessage = "Register up failed";
+        if (error.response && error.response.data && error.response.data.error) {
+          errorMessage = error.response.data.error;
+        }
+        Alert.alert("Error", errorMessage);
+      });
+  };
 
   return (
     <View style={styles.container}>
@@ -23,7 +47,7 @@ export default SignUpView = (props) => {
           placeholder="Full name"
           keyboardType="email-address"
           underlineColorAndroid="transparent"
-          onChangeText={fullName => setFullName({ fullName })}
+          onChangeText={(fullName) => setFullName(fullName)}
         />
       </View>
 
@@ -37,7 +61,7 @@ export default SignUpView = (props) => {
           placeholder="Email"
           keyboardType="email-address"
           underlineColorAndroid="transparent"
-          onChangeText={email => setEmail({ email })}
+          onChangeText={(email) => setEmail(email)}
         />
       </View>
       <View style={styles.inputContainer}>
@@ -50,18 +74,17 @@ export default SignUpView = (props) => {
           placeholder="Password"
           secureTextEntry={true}
           underlineColorAndroid="transparent"
-          onChangeText={password => setPassword({ password })}
+          onChangeText={(password) => setPassword(password)}
         />
       </View>
       <TouchableOpacity
         style={[styles.buttonContainer, styles.signupButton]}
-        // onPress={() => showAlert('Sign_Up')}>
-        onPress={() => props.navigation.navigate('Confirm')}>
+        onPress={signUpServer}>
         <Text style={styles.signUpText}>Sign Up</Text>
       </TouchableOpacity>
     </View>
-  )
-}
+  );
+};
 
 const styles = StyleSheet.create({
   container: {
@@ -108,4 +131,4 @@ const styles = StyleSheet.create({
   signUpText: {
     color: 'white',
   },
-})
+});

@@ -156,14 +156,11 @@ const styles = StyleSheet.create({
     marginTop: 10,
   },
   SignUpButton: {
-    // backgroundColor: '#7B68EE',
     width: 80,
     height: 40,
-    // padding: 10,
     borderRadius: 10,
     alignItems: 'center',
     color: '#02DFF1'
-    // marginTop: 1,
   },
   loginButtonText: {
     color: '#fff',
@@ -171,12 +168,11 @@ const styles = StyleSheet.create({
     backgroundColor: '#C407EA',
     marginTop: 10,
     padding: 10,
-    textAlign: 'center',/////////////////
+    textAlign: 'center',
 
   },
   restoreButtonContainer: {
     width: 50,
-    // alignItems: 'flex-end',
     marginBottom: 10,
 
   },
@@ -211,14 +207,11 @@ const styles = StyleSheet.create({
     backgroundColor: '#D62517'
   },
   ForgotButton: {
-    // backgroundColor: '#7B68EE',
     width: 300,
     height: 40,
-    // padding: 10,
     borderRadius: 10,
     alignItems: 'center',
     color: 'black'
-    // marginTop: 1,
   },
  
   
@@ -226,4 +219,3 @@ const styles = StyleSheet.create({
 
 
 export default LoginScreen;
-// sign up

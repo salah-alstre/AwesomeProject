@@ -6,7 +6,7 @@ const CreditCardInfoScreen = () => {
 
   const[cards, setCards]  = useState([
     { id: 1, number: '**** **** **** 4685', holder:'Salah alstre', expiration:'12/26', logo: 'https://img.icons8.com/color/70/000000/visa.png' },
-    { id: 2, number: '**** **** **** 7301', holder:'Salah alstre', expiration:'06/28',logo: 'https://img.icons8.com/color/70/000000/mastercard.png' },
+    { id: 2, number: 'bit', holder:'Salah alstre', expiration:'      ∞',logo: 'https://play-lh.googleusercontent.com/CCDNe_C-o8mbYFIZaxn9k2DOLo7K3IzweXKdZbebcL80gS6CeiLdw9t4K05iv2fQl8U' },
     { id: 3, number: 'Apple Pay', holder:'Salah alstre', expiration:'      ∞', logo:'https://img.icons8.com/color/70/000000/apple-pay.png' },
     { id: 4, number: 'cash', holder:'To pay in cash, choose this card”.', expiration:'      ∞', logo:'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRFW4vhzzg-YFU-gdo-ZlrhePPrW3GfJ6edetkPrMlmfg&s' },
 
@@ -37,9 +37,6 @@ const CreditCardInfoScreen = () => {
           </View>
         ))}
       </ScrollView>
-      {/* <TouchableOpacity style={styles.paymentButton}>
-        <Text style={styles.buttonText}>Make a Payment</Text>
-      </TouchableOpacity> */}
       <Popover
       from={(
         <TouchableOpacity style={styles.paymentButton}>
@@ -66,7 +63,7 @@ const styles = StyleSheet.create({
     fontSize: 30,
     fontWeight: 'bold',
     marginBottom: 20,
-    color:'#1640DF',
+    color:'#9105FF',
   },
   cardContainer: {
     marginHorizontal:10,
@@ -120,7 +117,7 @@ const styles = StyleSheet.create({
     height: 30,
   },
   paymentButton: {
-    backgroundColor: '#00008B',
+    backgroundColor: '#9105FF',
     paddingHorizontal: 60,
     paddingVertical: 20,
     borderRadius: 60,

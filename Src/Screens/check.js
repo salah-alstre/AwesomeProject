@@ -1,83 +1,3 @@
-// import React from 'react';
-// import { View, Text, Image, StyleSheet } from 'react-native';
-
-// const ProfileScreen = () => {
-//   return (
-//     <View style={styles.container}>
-//       <Image
-//         source={{ uri: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRzVqFSqdyif4L1CsliprcMfO_XwKgca4qWE2SI_4P-Kg&s' }}
-//         style={styles.coverImage}
-//       />
-//       <View style={styles.avatarContainer}>
-//         <Image
-//           source={{ uri: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSx29aPEikErgnx9_wA_cP94bQ6MYt0yhluV9VbKexqZw&s' }}
-//           style={styles.avatar}
-//         />
-//         <Text style={[styles.name, styles.textWithShadow]}>Salah Alstre</Text>
-//       </View>
-//       <View style={styles.content}>
-//         <View style={styles.infoContainer}>
-//           <Text style={styles.infoLabel}>Email:</Text>
-//           <Text style={styles.infoValue}>salah.codezone@gmail.com</Text>
-//         </View>
-//         <View style={styles.infoContainer}>
-//           <Text style={styles.infoLabel}>Location:</Text>
-//           <Text style={styles.infoValue}>tira , 32</Text>
-//         </View>
-//         {/* <View style={styles.infoContainer}>
-//           <Text style={styles.infoLabel}>Bio:</Text>
-//           <Text style={styles.infoValue}>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin ornare magna eros, eu pellentesque tortor vestibulum ut. Maecenas non massa sem. Etiam finibus odio quis feugiat facilisis.</Text>
-//         </View> */}
-//       </View>
-//     </View>
-//   );
-// };
-
-// const styles = StyleSheet.create({
-//   container: {
-//     flex: 1,
-//     backgroundColor: '#fff',
-//     padding: 20,
-//   },
-//   coverImage: {
-//     height: 200,
-//     position: 'absolute',
-//     top: 0,
-//     left: 0,
-//     right: 0,
-//   },
-//   avatarContainer: {
-//     alignItems: 'center',
-//     marginTop: 20,
-//   },
-//   avatar: {
-//     width: 120,
-//     height: 120,
-//     borderRadius: 60,
-//   },
-//   name: {
-//     fontSize: 20,
-//     fontWeight: 'bold',
-//     marginTop: 10,
-//     color:'white'
-//   },
-//   content: {
-//     marginTop: 20,
-//   },
-//   infoContainer: {
-//     marginTop: 20,
-//   },
-//   infoLabel: {
-//     fontWeight: 'bold',
-//   },
-//   infoValue: {
-//     marginTop: 5,
-//   },
-// });
-
-// export default ProfileScreen;
-
-
 import React from 'react'
 import { StyleSheet, Text, View, Image } from 'react-native'
 import { TouchableOpacity } from 'react-native-gesture-handler'
@@ -114,8 +34,8 @@ export default UserProfileView = () => {
             <Text style={styles.info}>To contact the owner{'\n'} salah.code.zone</Text>
           </View>
         </View>
-
-      </View>
+     
+      </View> 
     </View>
   )
 }
@@ -177,3 +97,5 @@ const styles = StyleSheet.create({
     color: '#FFFFFF',
   },
 })
+
+
