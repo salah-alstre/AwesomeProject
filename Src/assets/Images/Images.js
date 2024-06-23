@@ -10,6 +10,7 @@ const Images = {
     facebook: ()=> require('./facebook.png'),
     check: ()=> require('./check.png'),
     WhatsApp: ()=> require('./WhatsApp.png'),
+    done: ()=> require('./done.jpg'),
 
 
 }

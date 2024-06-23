@@ -14,6 +14,8 @@ import Confirm  from '../Src/Screens/Confirm';
 import ConfirmMail  from '../Src/Screens/ConfirmMail';
 import WaitingScreen  from '../Src/Screens/WaitingScreen';
 import Check  from '../Src/Screens/check';
+import WaitingPayment  from '../Src/Screens/WaitingPayment';
+
 
 
 const MainNavigation = () => {
@@ -43,6 +45,8 @@ const MainNavigation = () => {
          <Stack.Screen options={{headerShown: false}} name="ConfirmMail" component={ConfirmMail} />
          <Stack.Screen options={{headerShown: false}} name="WaitingScreen" component={WaitingScreen} />
          <Stack.Screen options={{headerShown: false}} name="check" component={Check} />
+         <Stack.Screen options={{headerShown: false}} name="WaitingPayment" component={WaitingPayment} />
+
 
 
        </Stack.Navigator>

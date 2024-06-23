@@ -1,4 +1,4 @@
-import { StyleSheet, View, Button, Image, TouchableOpacity, Text } from 'react-native';
+import { StyleSheet, View, Button, Image, TouchableOpacity, Text,Linking  } from 'react-native';
 import React, { useEffect, useState } from "react";
 import TheDropDown from '../compnent/TheDropDown';
 import Popover from 'react-native-popover-view';
@@ -16,13 +16,11 @@ const DetailsScreen = (props) => {
     // Function to fetch details from the server
     const fetchDetailsFromServer = async () => {
         try {
-            // Call your API function to fetch details
-            const detailsResponse = await Details(item.id); // Assuming Details function accepts an ID
+            const detailsResponse = await Details(item.id); 
             console.log("Details from server:", detailsResponse);
-            setDetails(detailsResponse); // Update details state with the response
+            setDetails(detailsResponse); 
         } catch (error) {
             console.error("Error fetching details:", error);
-            // Handle error, show error message, etc.
         }
     };
 
@@ -50,41 +48,43 @@ const DetailsScreen = (props) => {
             <View style={styles.icon}>
                 {/* Your Popover components */}
                 <Popover
-                    from={(
-                        <TouchableOpacity>
+                     from={() => (
+                        <TouchableOpacity onPress={() => Linking.openURL('https://web.whatsapp.com/')}>
                             <Image source={{ uri: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRNqIU43tJGMAY7wm_igrq_d3tcPDHHl2o9Qw&usqp=CAU" }} style={styles.pop} />
                         </TouchableOpacity>
                     )}>
-                    <Text> Shop owner number {'\n'}        055-243-1000  </Text>
+                    {/* <Text> Shop owner number {'\n'}        055-243-1000  </Text> */}
                 </Popover>
 
                 <Popover
-                    from={(
-                        <TouchableOpacity>
+                     from={() => (
+                        <TouchableOpacity onPress={() => Linking.openURL('https://www.google.com/maps')}>
                             <Image source={{ uri: "https://pbs.twimg.com/profile_images/1611472516920520705/gWLeDDCJ_400x400.jpg" }} style={styles.pop2} />
                         </TouchableOpacity>
                     )}>
-                    <Text>      Shop location {'\n'}        tira.North.32   </Text>
                 </Popover>
 
 
                 <Popover
-                    from={(
-                        <TouchableOpacity>
+                    from={() => (
+                        <TouchableOpacity onPress={() => Linking.openURL('https://www.instagram.com/')}>
                             <Image source={{ uri: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTQrrkvfjTGsT-s6OdaByQ-QzeoVvCTqKc8Hq9de0bLmw&s" }} style={styles.pop2} />
                         </TouchableOpacity>
                     )}>
-                    <Text>          instagram {'\n'}    Code_Zone_college   </Text>
                 </Popover>
 
                 <Popover
-                    from={(
-                        <TouchableOpacity>
-                            <Image source={{ uri: "https://cdn.iconscout.com/icon/premium/png-256-thumb/facebook-2752192-2285009.png?f=webp" }} style={styles.pop2} />
-                        </TouchableOpacity>
-                    )}>
-                    <Text>      facebook  {'\n'}    Code_Zone   </Text>
+                 from={() => (
+                        <TouchableOpacity onPress={() => Linking.openURL('https://facebook.com')}>
+                            <Image
+                   source={{ uri: 'https://cdn.iconscout.com/icon/premium/png-256-thumb/facebook-2752192-2285009.png?f=webp' }}
+                     style={styles.pop2}
+                        />
+                 </TouchableOpacity>
+  )}
+>
                 </Popover>
+
             </View>
         </View>
     );
