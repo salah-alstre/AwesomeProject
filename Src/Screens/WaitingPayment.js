@@ -6,7 +6,7 @@ const WaitingScreen = ({ navigation }) => {
     // Simulating a delay before navigating to the phone number screen
     setTimeout(() => {
       navigation.replace('Home');
-    }, 5000);
+    }, 6000);
   }, []);
 
 
@@ -31,9 +31,10 @@ const styles = StyleSheet.create({
 
   Image: {
     width: 1000,
-    height: 500,
-    marginTop: 100,
+    height: 700,
+    marginTop: 25,
     alignSelf: 'center',
+    
   },
 
 });

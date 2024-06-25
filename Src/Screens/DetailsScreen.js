@@ -53,7 +53,6 @@ const DetailsScreen = (props) => {
                             <Image source={{ uri: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRNqIU43tJGMAY7wm_igrq_d3tcPDHHl2o9Qw&usqp=CAU" }} style={styles.pop} />
                         </TouchableOpacity>
                     )}>
-                    {/* <Text> Shop owner number {'\n'}        055-243-1000  </Text> */}
                 </Popover>
 
                 <Popover
@@ -75,6 +74,7 @@ const DetailsScreen = (props) => {
 
                 <Popover
                  from={() => (
+                    
                         <TouchableOpacity onPress={() => Linking.openURL('https://facebook.com')}>
                             <Image
                    source={{ uri: 'https://cdn.iconscout.com/icon/premium/png-256-thumb/facebook-2752192-2285009.png?f=webp' }}

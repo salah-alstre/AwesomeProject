@@ -2,7 +2,7 @@
 
 
 import React, { useEffect, useState } from 'react';
-import { StyleSheet, View, ImageBackground, Image, TextInput, TouchableOpacity, Text, Button } from 'react-native';
+import { StyleSheet, View, ImageBackground, Image, TextInput, TouchableOpacity, Text, Button, Linking } from 'react-native';
 import { login } from '../res/api/api';
 
 
@@ -88,11 +88,11 @@ const LoginScreen = (props) => {
         </View>
 
         <View style={styles.buttonsContainer}>
-          <TouchableOpacity style={[styles.button, styles.facebook]}>
+          <TouchableOpacity onPress={() => Linking.openURL('https://facebook.com')} style={[styles.button, styles.facebook]}>
             <Text style={styles.buttonText}>Login with facebook</Text>
           </TouchableOpacity>
 
-          <TouchableOpacity style={[styles.button, styles.google]}>
+          <TouchableOpacity onPress={() => Linking.openURL('https://www.google.co.uk/')} style={[styles.button, styles.google]}>
             <Text style={styles.buttonText}>Login with Google</Text>
           </TouchableOpacity>
         </View>
