@@ -20,9 +20,11 @@ Book an Appointment: Choose a suitable time and make a booking.
 ## Installation and Setup
 Clone the Repository: Download the project from GitHub.
 Install Dependencies: Use [yarn install] to install the required dependencies.
-Run the Server: yarn start.
+Run the Server: Use [yarn start] to start the server.
 
 ## Contribution
 We welcome contributions from the community to improve the project. You can report issues, request new features, or submit pull requests via GitHub.
 
 
+## Contact
+For any inquiries or support, please reach out to us via email at: [error.salah59@gmail.com].
