@@ -17,7 +17,7 @@ Sign Up and Login: Create an account or log in.
 Find Barber Shops: Use the search features to find nearby barber shops.
 Book an Appointment: Choose a suitable time and make a booking.
 
-### Steps
+### installation
 
 1. Clone this repository:
    ```bash
