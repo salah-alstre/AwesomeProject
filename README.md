@@ -4,8 +4,8 @@
 The Barber Appointment Booking App is an innovative solution designed to enhance the barbering experience for users by providing a comprehensive platform for booking appointments at various barber shops. The app allows users to search for nearby salons, view ratings and reviews, and book appointments quickly and easily.
 
 ## Key Features
-- **Direct Booking: Users can book barber appointments directly through the app without the need for phone calls.
-- **User-Friendly Interface: A simple and intuitive design ensures a seamless experience for users.
+- Direct Booking: Users can book barber appointments directly through the app without the need for phone calls.
+- User-Friendly Interface: A simple and intuitive design ensures a seamless experience for users.
 
 ## Technologies Used
 Frontend: [Frontend technologies used,react native ]
