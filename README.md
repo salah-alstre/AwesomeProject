@@ -40,4 +40,4 @@ We welcome contributions from the community to improve the project. You can repo
 
 
 ## Contact
-For any inquiries or support, please reach out to us via email at: [error.salah59@gmail.com].
+For any inquiries or support, please reach out to us via email at: [email](mailto:error.salah59@gmail.com).
