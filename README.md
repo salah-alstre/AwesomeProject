@@ -23,17 +23,17 @@ Book an Appointment: Choose a suitable time and make a booking.
    ```bash
    git clone https://github.com/salah-alstre/salahAppServer.git
    
-## Navigate to the project directory:
+2. Navigate to the project directory:
 
-    cd salahAppServer
+       cd AwesomeProject
 
-## Install dependencies:
+3. Install dependencies:
 
-    npm install
+       npm install
 
-## Running the Server
+4. Running the Server
 
-    npm start
+       npm start
 
 ## Contribution
 We welcome contributions from the community to improve the project. You can report issues, request new features, or submit pull requests via GitHub.
