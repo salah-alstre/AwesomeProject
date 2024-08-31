@@ -21,7 +21,7 @@ Book an Appointment: Choose a suitable time and make a booking.
 
 1. Clone this repository:
    ```bash
-   git clone https://github.com/salah-alstre/salahAppServer.git
+   git clone https://github.com/salah-alstre/AwesomeProject.git
    
 2. Navigate to the project directory:
 
