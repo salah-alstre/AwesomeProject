@@ -17,10 +17,23 @@ Sign Up and Login: Create an account or log in.
 Find Barber Shops: Use the search features to find nearby barber shops.
 Book an Appointment: Choose a suitable time and make a booking.
 
-## Installation and Setup
-Clone the Repository: Download the project from GitHub.
-Install Dependencies: Use [npm install] to install the required dependencies.
-Run the Server: Use [npm start] to start the server.
+### Steps
+
+1. Clone this repository:
+   ```bash
+   git clone https://github.com/salah-alstre/salahAppServer.git
+   
+## Navigate to the project directory:
+
+    cd salahAppServer
+
+## Install dependencies:
+
+    npm install
+
+## Running the Server
+
+    npm start
 
 ## Contribution
 We welcome contributions from the community to improve the project. You can report issues, request new features, or submit pull requests via GitHub.
